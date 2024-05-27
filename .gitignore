@@ -1,0 +1,25 @@
+# logs
+logs
+*.log
+npm-debug.log*
+
+# runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# compiled code
+build/
+
+# dependencies
+node_modules/
+
+# eslint cache
+.eslintcache
+
+# vscode files
+.vscode/
+
+# dist directory
+dist/

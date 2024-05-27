@@ -1,0 +1,40 @@
+{
+  "name": "log-db",
+  "version": "0.1.0",
+  "description": "A log-structured storage engine written in JavaScript",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rollup ./main --file dist/bundle.js --format cjs",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autoboxer/log-db.git"
+  },
+  "type": "module",
+  "keywords": [
+    "db",
+    "database",
+    "log-structured",
+    "storage",
+    "storage engine"
+  ],
+  "engines": {
+    "npm": ">=10.7.0",
+    "node": ">=18.20.3"
+  },
+  "author": "Jared Collier <jared.j.collier@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/autoboxer/log-db/issues"
+  },
+  "homepage": "https://github.com/autoboxer/log-db#readme",
+  "dependencies": {
+    "rollup": "^4.18.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0"
+  }
+}
