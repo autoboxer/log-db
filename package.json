@@ -5,6 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "build": "rollup ./main --file dist/bundle.js --format cjs",
+    "start": "node src/main.mjs",
     "lint": "eslint",
     "jest": "jest",
     "test": "jest --collect-coverage"
