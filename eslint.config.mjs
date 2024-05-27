@@ -6,7 +6,7 @@ export default [
   { languageOptions: { globals: globals.nodeBuiltin } },
   {
     plugins: js.configs.recommended,
-    files: [ 'src/**/*.mjs' ],
+    files: [ 'src/**/*.mjs', 'tests/**/*.mjs' ],
     rules: {
       'array-bracket-spacing': [ 'error', 'always', { 'objectsInArrays': false, 'arraysInArrays': false } ],
       'arrow-spacing': 'error',
@@ -37,6 +37,21 @@ export default [
       'space-in-parens': ['error', 'always', { 'exceptions': ['{}', '[]', '()', 'empty'] }],
       'template-curly-spacing': [ 'error', 'always' ],
       'template-tag-spacing': 'error'
+    }
+  },
+  {
+    'files': [ 'tests/**/*.mjs' ],
+    'plugins': [ 'jest' ],
+    'env': {
+      'jest/globals': true
+    },
+    'extends': [ 'plugin:jest/recommended' ],
+    'rules': {
+      'jest/no-disabled-tests': 'warn',
+      'jest/no-focused-tests': 'error',
+      'jest/no-identical-title': 'error',
+      'jest/prefer-to-have-length': 'warn',
+      'jest/valid-expect': 'error'
     }
   }
  ];
