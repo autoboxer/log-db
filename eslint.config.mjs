@@ -26,6 +26,7 @@ export default [
       'no-mixed-operators': 'error',
       'no-multi-spaces': 'error',
       'no-multiple-empty-lines': 'error',
+      'no-trailing-spaces': 'error',
       'no-var': 'error',
       'no-console': [ 'error', { 'allow': [ 'warn', 'error' ] } ],
       'no-use-before-define': [ 'error', { 'functions': false } ],
@@ -34,7 +35,7 @@ export default [
       'quotes': [ 'error', 'single' ],
       'semi': [ 'error', 'always' ],
       'spaced-comment': [ 'error', 'always' ],
-      'space-in-parens': ['error', 'always', { 'exceptions': ['{}', '[]', '()', 'empty'] }],
+      'space-in-parens': ['error', 'always', { 'exceptions': ['{}', 'empty'] }],
       'template-curly-spacing': [ 'error', 'always' ],
       'template-tag-spacing': 'error'
     }
